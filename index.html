@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 13.0.0.0 for Windows">
+    <link rel="stylesheet" href="style.css">
+<TITLE>グラフ論理</TITLE>
+</HEAD>
+<BODY>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<h1>【　グラフ論理　】</h1>
+
+<p id="buttom"><strong>表示</strong></p><br>
+<p class="di"><b>｢グラフ論理｣</b></p>とは、ある要素を関連付けて整理したり、分析したりするために、要素間のつながりをグラフとして分析する手法のことです。いろいろな要素を点に置き換え、その関連性を辺で結び特徴を分析します。<br>
+グラフ論理で言われる<p class="di"><b>｢グラフ｣</b></p>は、表計算ソフトなどで作成するグラフとは異なり、点と辺で構成され、点と点のつながり方を表します。ひとつの点に付いている辺の数を<p class="di"><b>｢次数｣</b></p>といいます。<br>
+また、辺の向きを考えたグラフを<p class="di"><b>｢有向グラフ｣</b></p>、逆に辺の向きを考えていないグラフを<p class="di"><b>｢無向グラフ｣</b></p>と呼びます。有向グラフは辺に矢印を付けて表現し、点に入ってくる、または点から出ていく方向を示します。点に入ってくる辺の数を<p class="di"><b>｢入次数｣</b></p>、点から出ていく辺の数を<p class="di"><b>｢出次数｣</b></p>といいます。<br>
+一般的なグラフには、次のような性質があります。<br>
+<P><IMG src="1-1-2-6-1.JPG" width="600" border="0"></P>
+
+    <script>
+        const buttom = document.getElementById('buttom');
+        const diElements = document.querySelectorAll('.di'); // クラスの要素をすべて取得
+    
+        // マウスホバー時
+        buttom.addEventListener('mouseover', () => {
+            diElements.forEach(di => {
+                di.style.opacity = '1';
+            });
+        }, false);
+    
+        // マウスが離れている時
+        buttom.addEventListener('mouseleave', () => {
+            diElements.forEach(di => {
+                di.style.opacity = '0';
+            });
+        }, false);
+    </script>
